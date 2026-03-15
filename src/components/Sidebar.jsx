@@ -15,7 +15,7 @@ export default function Sidebar({ activePage, setActivePage }) {
         <img
           src="/logo.png"
           alt="Moodscope"
-          style={{width:"120px"}}
+          style={{width:"200px"}}
         />
       </div>
 
