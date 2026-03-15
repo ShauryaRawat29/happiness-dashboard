@@ -1,4 +1,5 @@
 export default function Sidebar({ activePage, setActivePage }) {
+
   const pages = [
     { id: "dashboard", label: "Dashboard" },
     { id: "survey", label: "Survey" },
@@ -10,7 +11,13 @@ export default function Sidebar({ activePage, setActivePage }) {
 
   return (
     <>
-      <h2>Multi-Happiness and Well being Survey Dashboard Chatbot</h2>
+      <div style={{textAlign:"center", marginBottom:"30px"}}>
+        <img
+          src="/logo.png"
+          alt="Moodscope"
+          style={{width:"120px"}}
+        />
+      </div>
 
       {pages.map(page => (
         <div
