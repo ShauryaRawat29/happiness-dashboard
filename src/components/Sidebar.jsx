@@ -11,14 +11,36 @@ export default function Sidebar({ activePage, setActivePage }) {
 
   return (
     <>
-      <div style={{textAlign:"center", marginBottom:"30px"}}>
+      {/* LOGO SECTION */}
+      <div style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "15px",
+        marginBottom: "30px"
+      }}>
         <img
           src="/logo.png"
-          alt="Moodscope"
-          style={{width:"200px"}}
+          alt="Main Logo"
+          style={{
+            width: "140px",
+            height: "auto",
+            borderRadius: "10px"
+          }}
+        />
+
+        <img
+          src="/logo2.png"
+          alt="Second Logo"
+          style={{
+            width: "90px",
+            height: "auto",
+            borderRadius: "10px"
+          }}
         />
       </div>
 
+      {/* MENU */}
       {pages.map(page => (
         <div
           key={page.id}
